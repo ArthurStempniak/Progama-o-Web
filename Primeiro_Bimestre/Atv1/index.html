@@ -1,79 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog de Viagens</title>
+</head>
+<body>
 
-    <style>
-
-    body {
-    margin: 0;
-    height: 100vh;          /* ocupa a altura toda da tela */
-    display: flex;
-    justify-content: center; /* centraliza na horizontal */
-    align-items: center;     /* centraliza na vertical */
-    }
+<header>
+    <h1>
+        Meu Blog de Viagens
+    </h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
     
-    .box{
-        width: 350px;
-        height: 550px;
-        border-radius: 15px;
-        background-color: rgba(166, 199, 188, 0.432);
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        align-items: center; 
-    }
+</header>
 
-    .email{
-        color: black;
-        background-color: rgba(0, 0, 255, 0.212);
-    }
+<main>
 
-    .formulario{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-    }
+    <aside>
+        <h3>Posts Relacionados</h3>
+        <ul>
+            <li><a href="#">Post 1</a></li>
+            <li><a href="#">Post 2</a></li>
+            <li><a href="#">Post 3</a></li>
+            <li><a href="#">Post 4</a></li>
+        </ul>
+    </aside>
 
-    .linha1{
-        background-color: black;
-        height: 5px;
-        width: 29px;
-
-        position: absolute;
-        z-index: -9;
+    <article>
+        <h2>
+            Descobrindo as Praias do Nordeste
+        </h2>
+        <time datetime="2026-02-25">02 de Fevereiro de 2026</time>
+        <p>
+            O Brasil é bão mesmo, cheio de praias, nordeste muito bom, quente, açaí, Fernando de noranhas topezeira demais
+        </p>
+        <p>
+            O nordeste é conhecido por ser um lugar com suas praias paradisiacas, montanhas de areia.
+        </p>
+        <figure>
+            <img src="praia.jpg">
+            <figcaption>Praia do Nordeste</figcaption>
+        </figure>
         
-    }
+    </article>
+</main>
 
-</style>
+<footer>
+    <p>&copy; 2026 - Todos os direitos reservados.</p>
+</footer>
 
-    <body>
-
-        <div>
-            <div class="linha1"></div>
-            <div class="linha2"></div>
-            <div class="linha3"></div>
-            <div class="linha4"></div>
-            <div class="linha5"></div>
-
-        </div>
-
-        <div class="box">
-            <p>
-                Hola Mundo
-            </p>
-
-            <form class="formulario">
-
-                <input class="email">
-                <input class="senha">
-
-            </form>
-        </div>
-
-    </body>
+    
+</body>
 </html>
