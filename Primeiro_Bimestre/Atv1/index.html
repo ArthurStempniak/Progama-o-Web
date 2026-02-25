@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <style>
+
+    body {
+    margin: 0;
+    height: 100vh;          /* ocupa a altura toda da tela */
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center;     /* centraliza na vertical */
+    }
+    
+    .box{
+        width: 350px;
+        height: 550px;
+        border-radius: 15px;
+        background-color: rgba(166, 199, 188, 0.432);
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .email{
+        color: black;
+        background-color: rgba(0, 0, 255, 0.212);
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .linha1{
+        background-color: black;
+        height: 5px;
+        width: 29px;
+
+        position: absolute;
+        z-index: -9;
+        
+    }
+
+</style>
+
+    <body>
+
+        <div>
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+            <div class="linha4"></div>
+            <div class="linha5"></div>
+
+        </div>
+
+        <div class="box">
+            <p>
+                Hola Mundo
+            </p>
+
+            <form class="formulario">
+
+                <input class="email">
+                <input class="senha">
+
+            </form>
+        </div>
+
+    </body>
+</html>
