@@ -14,17 +14,17 @@
     <fieldset><legend>Crie sua conta</legend>
 
         <label for="nome">Nome</label>
-        <input type="text" id="nome">
+        <input type="text" id="nome" required>
 
         <label for="email">E-mail</label>
-        <input type="email" id="email" placeholder="nome@gmail.com">
+        <input type="email" id="email" placeholder="nome@gmail.com" required>
 
         <label for="senha">Senha</label>
-        <input type="password" id="senha" placeholder="Que não seja 123">
+        <input type="password" id="senha" placeholder="Que não seja 123" required>
 
         <label><strong>Gênero</strong></label><br>
 
-        <input type="radio" name="genero" id="masc">
+        <input type="radio" name="genero" id="masc" required>
         <label for="masc">Masculino</label>
 
         <input type="radio" name="genero" id="fem" required>
@@ -34,11 +34,11 @@
         <label for="outro">Outro</label>
 
         <label>Biografia</label>
-        <textarea placeholder="Ex... Subi num pé de perâ pra pegar uma perâ a perâ tava podre eu desci com uma goiaba" rows="5"></textarea>
+        <textarea placeholder="Ex... Subi num pé de perâ pra pegar uma perâ a perâ tava podre eu desci com uma goiaba" rows="5" required></textarea>
 
         <label><strong>Termos De Uso</strong></label>
         <input type="checkbox" required> 
-        <label>Eu finji que li e aceito os termos de serviço</label>
+        <label>Eu finjo que li e aceito os termos de serviço</label>
 
         <button>Enviar Formulário</button>
 
