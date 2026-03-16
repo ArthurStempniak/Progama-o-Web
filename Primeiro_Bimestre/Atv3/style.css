@@ -1,0 +1,62 @@
+body {
+    background-color: #eef7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+article {
+    background-color: rgba(192, 192, 192, 0.658);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 18px;
+    width: 500px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px 18px 0 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 32px;
+}
+
+.titulo-post {
+    font-family: 'Merriweather', 'Georgia', serif;
+    color: rgb(41, 68, 108);
+}
+
+time {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+p {
+    text-align: justify;
+    color: #333;
+    line-height: 1.6;
+}
+
+li {
+    text-align: justify;
+    padding: 5px 5px 5px 7.5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(41, 68, 108);
+    transition: color 200ms, text-decoration 200ms;
+}
+
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
