@@ -1,0 +1,32 @@
+#hero {
+    background: var(--light-gray);
+    border-top: 0.125rem solid #e4e4e4;
+    height: 90vh;
+    display: flex;
+}
+
+#hero > img {
+    position: absolute;
+    right: 0;
+    height: 60%;
+    padding-left: 30%;
+}
+
+#hero p {
+  color: var(--second-text-color);
+}
+
+#hero .content {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    text-align: center;
+    gap: 1.75rem;
+}
+
+#hero .content > div {
+    width: fit-content;
+    align-self: center;
+    margin-bottom: 20%;
+}
