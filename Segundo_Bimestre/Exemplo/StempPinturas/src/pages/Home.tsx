@@ -8,10 +8,15 @@ import { useState } from 'react';
 import HeroRectangleOne from "../assets/images/rectangleOne.png";
 import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
 import "../styles/hero.css";
+import Champion from "../assets/champion.png";
+import "../styles/solution.css"
+
 
 export default function Home() {
 
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+    
 
     return (
         <>
@@ -25,16 +30,16 @@ export default function Home() {
                                 <a href="#">Home</a>
                             </li>
                             <li>
-                                <a href="#solution">Soluções</a>
+                                <a onClick={() => setShowMobileMenu(!showMobileMenu)} href="#solution">Soluções</a>
                             </li>
                             <li>
-                                <a href="#testimonials">Depoimentos</a>
+                                <a onClick={() => setShowMobileMenu(!showMobileMenu)} href="#testimonials">Depoimentos</a>
                             </li>
                             <li>
-                                <a href="#pricing">Preços</a>
+                                <a onClick={() => setShowMobileMenu(!showMobileMenu)} href="#pricing">Preços</a>
                             </li>
                             <li>
-                                <a href="#contact">Contato</a>
+                                <a onClick={() => setShowMobileMenu(!showMobileMenu)} href="#contact">Contato</a>
                             </li>
                         </ul>
                     </div>
@@ -104,6 +109,41 @@ export default function Home() {
                         </span>
                     </div>
                 </div>
+
+            </section>
+
+            <section className="container" id="solution">
+                <header>
+                    <span>
+                        <h2>Soluções</h2>
+                        <span className="desktop-only">
+                            <h2>
+                                Sob medida para você
+                            </h2>
+                        </span>
+                    </span><p>
+                        Inovação é com a gente! A <strong>DonaFrost </strong>
+                        já conquistou diversos clientes, seja você mais um deles,
+                        veja tudo que pode ganhar com nossos serviços.
+                    </p>
+                </header>
+
+                <section className="even-columns">
+                    <div className="card">
+                        <span>
+                            <img src={Champion} alt="ícone campeão" width={64} height={64} />
+                        </span>
+                        <div>
+                            <h3>
+                                Produto Vencedor
+                            </h3>
+                            <p>
+                                Ideia matadora, nosso time já ganhou diversos eventos de inovação com nosso produto, entre eles podemos citar o CityFarm da FAG e Startup Garage.
+                            </p>
+                            <hr />
+                        </div>
+                    </div>
+                </section>
 
             </section>
 
